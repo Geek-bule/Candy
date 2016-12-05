@@ -32,7 +32,7 @@ public:
     void            setChessPotX(CHESS_POT potX);
     void            setChessPotY(CHESS_POT potY);
     void            setChessPoint(ChessPoint pot);
-    void            setChessSelected();
+    void            setChessSelected(bool status);
 protected:
     void            setChessType(CHESS_TYPE type);
 private:

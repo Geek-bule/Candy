@@ -19,6 +19,8 @@ public:
     
     ChessPoint();
     ChessPoint(int x,int y);
+    
+    
 };
 
 

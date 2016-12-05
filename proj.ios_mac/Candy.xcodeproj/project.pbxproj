@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04F24EA79E2FEB16726F1559 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D364C16A410D74FA7F2CF54 /* libcocos2d Mac.a */; };
+		1B1B4D1E1DF53FC900DD04B2 /* GameCycle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B4D1C1DF53FC900DD04B2 /* GameCycle.cpp */; };
 		1B1BD41F1DF293A3001A681B /* ChessControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BD41D1DF293A3001A681B /* ChessControl.cpp */; };
 		1B1BD4221DF293E7001A681B /* ChessBasic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BD4201DF293E7001A681B /* ChessBasic.cpp */; };
 		1B1BD4261DF29E2B001A681B /* ChessFather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BD4241DF29E2B001A681B /* ChessFather.cpp */; };
@@ -69,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
+		1B1B4D1C1DF53FC900DD04B2 /* GameCycle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameCycle.cpp; sourceTree = "<group>"; };
+		1B1B4D1D1DF53FC900DD04B2 /* GameCycle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameCycle.hpp; sourceTree = "<group>"; };
 		1B1BD41D1DF293A3001A681B /* ChessControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChessControl.cpp; sourceTree = "<group>"; };
 		1B1BD41E1DF293A3001A681B /* ChessControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChessControl.hpp; sourceTree = "<group>"; };
 		1B1BD4201DF293E7001A681B /* ChessBasic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChessBasic.cpp; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 			children = (
 				1B1BD42C1DF2C918001A681B /* GameRules.cpp */,
 				1B1BD42D1DF2C918001A681B /* GameRules.hpp */,
+				1B1B4D1C1DF53FC900DD04B2 /* GameCycle.cpp */,
+				1B1B4D1D1DF53FC900DD04B2 /* GameCycle.hpp */,
 			);
 			path = GameRules;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				1B1BD42E1DF2C918001A681B /* GameRules.cpp in Sources */,
+				1B1B4D1E1DF53FC900DD04B2 /* GameCycle.cpp in Sources */,
 				1B1BD4221DF293E7001A681B /* ChessBasic.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,

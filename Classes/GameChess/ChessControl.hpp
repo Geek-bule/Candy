@@ -13,6 +13,9 @@
 #include "ChessBasic.hpp"
 
 
+typedef std::vector<ChessFather*> VecChessFather;
+
+
 //chess create with type
 ChessFather *createChess(CHESS_TYPE type) {
     ChessFather* pChess = nullptr;
@@ -34,23 +37,31 @@ ChessFather *createChess(CHESS_TYPE type) {
 class ChessControl
 {
 public:
+    //instance
     static ChessControl* getInstance();
     
     //insert
+    void insertChess(CHESS_POT potX, CHESS_POT potY, ChessFather *pChess);
     void insertChess(CHESS_POT potX, CHESS_POT potY, CHESS_TYPE type);
+    void insertChess(ChessPoint point, ChessFather *pChess);
     void insertChess(ChessPoint point, CHESS_TYPE type);
     //update
+    void updateChess(CHESS_POT potX, CHESS_POT potY, ChessFather *pChess);
     void updateChess(CHESS_POT potX, CHESS_POT potY, CHESS_TYPE type);
+    void updateChess(ChessPoint point, ChessFather *pChess);
     void updateChess(ChessPoint point, CHESS_TYPE type);
     //delete
+    void deleteChess(ChessFather *pChess);
     void deleteChess(CHESS_POT potX, CHESS_POT potY);
     void deleteChess(ChessPoint point);
     //select
     ChessFather* selectChess(CHESS_POT potX, CHESS_POT potY);
     ChessFather* selectChess(ChessPoint point);
+    ChessPoint selectChess(ChessFather *pChess);
     //swap
     void swapChess(CHESS_POT startX, CHESS_POT startY,CHESS_POT endX, CHESS_POT endY);
     void swapChess(ChessPoint start, ChessPoint end);
+    void swapChess(ChessFather *pStart, ChessFather *pEnd);
     
 public:
     //get
@@ -65,7 +76,7 @@ private:
     ChessControl();
     ~ChessControl();
 private:
-    std::vector<ChessFather*>   m_vecChess;
+    VecChessFather              m_vecChess;
     int                         m_nMaxX;
     int                         m_nMaxY;
 };
